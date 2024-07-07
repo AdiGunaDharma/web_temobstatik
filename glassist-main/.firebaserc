@@ -1,0 +1,9 @@
+{
+  "projects": {
+    "default": "temobstatik",
+    "temobstatik": "temobstatik"
+  },
+  "targets": {},
+  "etags": {},
+  "dataconnectEmulatorConfig": {}
+}

@@ -1,0 +1,201 @@
+/* Import font Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Set font family for body and inputs */
+body, input {
+  font-family: "Poppins", sans-serif;
+}
+
+/* Styling for main container */
+.periksa {
+  position: relative;
+  width: 100%;
+  background-color: #f9fbff;
+  min-height: 100vh;
+  overflow: hidden;
+  padding: 20px;
+}
+
+/* Styling for form container */
+form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+/* Styling for submit button */
+.periksa-cek .periksabtn button {
+  width: 300px;
+  height: 60px;
+  background-color: #da2811;
+  border: none; /* Removed unnecessary border properties */
+  outline: none; /* Removed outline property */
+  color: #fff;
+  border-radius: 49px;
+  font-weight: 700;
+  margin: 15px 0;
+  transition: 0.5s;
+  cursor: pointer;
+  display: grid;
+  text-decoration: none; /* Removed unnecessary text-decoration property */
+}
+
+.periksabtn button:hover {
+  background-color: #e65f3d;
+  border-radius: 49px;
+}
+
+/* Styling for panels container */
+.panels-container {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+/* Styling for background gradient */
+.periksa:before {
+  content: "";
+  position: absolute;
+  height: 2000px;
+  width: 2500px;
+  top: -10%;
+  left: 58%;
+  transform: translateY(-50%);
+  background-image: linear-gradient(-45deg, #d21414 25%, #db422e 75%);
+  transition: 1.8s ease-in-out;
+  border-radius: 50%;
+}
+
+/* Styling for main content container */
+.periksa-cek {
+  position: absolute;
+  top: 45%;
+  transform: translate(-50%, -50%);
+  left: 30%;
+  width: 50%;
+  display: grid;
+  grid-template-columns: 1fr;
+  z-index: 5;
+}
+
+/* Styling for image */
+.prkimage {
+  width: 35%;
+  margin-left: 65%;
+  margin-top: 3.5%;
+  position: absolute;
+}
+
+/* Styling for top section */
+.top {
+  text-align: center;
+  color: #ab0e0e;
+  font-weight: 600;
+}
+
+.top .title {
+  margin-bottom: 10%;
+}
+
+.btn-top {
+  width: 250px;
+  height: 48px;
+}
+
+/* Styling for bottom section */
+.bottom {
+  color: #a95e5e;
+  padding-top: 6%;
+  width: max-content;
+}
+
+.bottom h3 {
+  padding-bottom: 5%;
+  padding-top: 10%;
+}
+
+/* Styling for value display */
+.value-display {
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+/* Styling for status indicators */
+.status-membaik, .status-memburuk {
+  border-radius: 2rem;
+  padding: 0.4rem;
+  text-align: center;
+  margin-top: 20%;
+}
+
+.status-membaik {
+  background-color: #9acf9c;
+  color: #fff;
+}
+
+.status-memburuk {
+  background-color: #ec6875;
+  color: #fff;
+}
+
+
+/* Media queries for responsiveness */
+@media screen and (min-width: 671px) {
+  .periksa-cek .periksabtn button {
+    margin-left: 4%;
+  }
+}
+
+@media screen and (max-width: 670px) {
+  .periksa:before {
+    display: none;
+  }
+
+  .prkimage {
+    display: none;
+  }
+
+  .periksa-cek {
+    width: 90%;
+    height: auto;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+  }
+
+  .bottom {
+    width: 100%;
+    text-align: center;
+  }
+
+  .bottom h3 {
+    justify-content: center;
+    font-size: 13pt;
+  }
+
+  .value-display {
+    font-size: 1.5rem;
+  }
+
+  .skill {
+    margin-left: 22%;
+  }
+
+  .status-membaik, .status-memburuk {
+    margin-top: 10%;
+  }
+}

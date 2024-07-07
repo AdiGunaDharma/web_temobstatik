@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+input {
+  font-family: "Poppins", sans-serif;
+}
+
+.home {
+  position: relative;
+  width: 100%;
+  background-color: #ffffff;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.button {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  left: 75%;
+  width: 50%;
+  transition: 1s 0.7s ease-in-out;
+  display: grid;
+  grid-template-columns: 1fr;
+  z-index: 5;
+}
+
+form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0rem 5rem;
+  transition: all 0.2s 0.7s;
+  overflow: hidden;
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+
+.profile .profileLogo {
+  position: absolute;
+  z-index: 9;
+  margin: 1.5% 1.5%;
+  height: 50px;
+}
+
+.button-form a {
+  width: 85%;
+  background-color: #e70e0e;
+  border: #745ea9;
+  outline: #6e5ca8;
+  height: 65px;
+  border-radius: 49px;
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.1rem;
+  margin: 0.5em 0;
+  cursor: pointer;
+  transition: 0.5s;
+  text-align: center;
+  text-decoration: none;
+  padding: 1em;
+  line-height: 1;
+}
+.button-form a:hover {
+  background-color: #d7544d;
+  color: #fff;
+}
+
+.panels-home {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.home:before {
+  content: "";
+  position: absolute;
+  height: 2000px;
+  width: 2000px;
+  top: -10%;
+  right: 48%;
+  transform: translateY(-50%);
+  background-image: linear-gradient(-45deg, #6e5ca8 25%, #9d6cae 75%);
+  /*transition: 1.8s ease-in-out;*/
+  border-radius: 50%;
+  z-index: 6;
+}
+
+.glassist {
+  width: 110%;
+  margin: 20% 15% 0 0;
+
+}
+
+.panels-home {
+  z-index: 6;
+  padding: 2rem 25% 0rem 2%;
+  pointer-events: none;
+}
+
+/*MOBILE*/
+
+@media screen and (max-width: 670px) {
+  .home:before {
+    height: 115%;
+    width: 190%;
+    top: -20%;
+    right: -40%;
+    transform: translateY(-50%);
+  }
+
+  .profile .profileLogo {
+    margin: 4% 4%;
+    height: 45px;
+  }
+
+  .panels-home .glassist {
+    width: 80%;
+    position: absolute;
+    margin-top: 6%;
+  }
+
+  .button {
+    top: 70%;
+    left: 50%;
+    width: 28rem;
+  }
+
+  .button-form a {
+    height: 3.5rem;
+  }
+
+  .panels-home {
+    z-index: 6;
+    padding: 2.5rem 25% 0rem 10%;
+    pointer-events: none;
+  }
+}

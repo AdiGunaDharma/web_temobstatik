@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/static/css/main.481a7e08.css",
+    "main.js": "/static/js/main.773b4ae9.js",
+    "static/js/787.441f456a.chunk.js": "/static/js/787.441f456a.chunk.js",
+    "static/media/photo2.jpg": "/static/media/photo2.308f2ac95026d912ea01.jpg",
+    "static/media/photo3.jpg": "/static/media/photo3.16bc0ba76986b178edab.jpg",
+    "static/media/photo1.jpg": "/static/media/photo1.3ed4bd38e6ec9ce28e5b.jpg",
+    "static/media/photo4.jpg": "/static/media/photo4.7151be5e117f50cb67a5.jpg",
+    "static/media/dev1.png": "/static/media/dev1.8896638a7aad7c9aa91d.png",
+    "static/media/dev2.png": "/static/media/dev2.8896638a7aad7c9aa91d.png",
+    "static/media/dev3.png": "/static/media/dev3.8896638a7aad7c9aa91d.png",
+    "static/media/dev4.png": "/static/media/dev4.8896638a7aad7c9aa91d.png",
+    "static/media/dev5.png": "/static/media/dev5.8896638a7aad7c9aa91d.png",
+    "static/media/temobstatikalat.png": "/static/media/temobstatikalat.7aa8cbe34b3664348760.png",
+    "static/media/glassist_logo.png": "/static/media/glassist_logo.2b0e6e04d117f106f2d5.png",
+    "static/media/profile.png": "/static/media/profile.69545e9f9fc22b7f41ba.png",
+    "static/media/logofix_white.png": "/static/media/logofix_white.e08bf8a9621f0af7dfc4.png",
+    "index.html": "/index.html",
+    "main.481a7e08.css.map": "/static/css/main.481a7e08.css.map",
+    "main.773b4ae9.js.map": "/static/js/main.773b4ae9.js.map",
+    "787.441f456a.chunk.js.map": "/static/js/787.441f456a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.481a7e08.css",
+    "static/js/main.773b4ae9.js"
+  ]
+}
